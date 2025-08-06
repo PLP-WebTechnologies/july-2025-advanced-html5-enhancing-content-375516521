@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Academy</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+      background-size: 400% 400%;
+      animation: waveColors 12s ease infinite;
+      color: #333;
+    }
+
+    @keyframes waveColors {
+      0% { background-position: 400% 500%; }
+      50% { background-position: 500% 450%; }
+      100% { background-position: 400% 500%; }
+    }
+
+    header, section, footer {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    fieldset {
+      border: 1px solid #888;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Academy</h1>
+    <p>This page demonstrates semantic HTML elements including lists, tables, media, and a structured HTML5 form with built-in validation.</p>
+  </header>
+
+  <section>
+    <h2>Popular Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C#</li>
+      <li>Go</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Top 3 Web Browsers</h2>
+    <ol>
+      <li>Google Chrome</li>
+      <li>Mozilla Firefox</li>
+      <li>Microsoft Edge</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>HTML5 Media Elements</h2>
+    
+    
+<blockquote class="imgur-embed-pub" lang="en" data-id="nIURczb"><a href="https://imgur.com/nIURczb">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+    <p><strong>Message from Developer:</strong></p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+     
+    </audio>
+    
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/qkEiB62" data-context="false" ><a href="//imgur.com/a/qkEiB62"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+    
+    </video>
+  </section>
+
+  <section>
+    <h2>Programming Course Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Development</td>
+          <td>12 Weeks</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>Cyber Security</td>
+          <td>16 Weeks</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Data Science</td>
+          <td>20 Weeks</td>
+          <td>Advanced</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g Charles Wambua" required minlength="3" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="e.g. charleswambua.edu@gmail.com" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Residence</legend>
+        <label for =country">Select Country: </label>
+         <select id="Country" name="Country" required>
+         <option value=" Kenya">Kenya</option>
+         <option value="Nigeria">Nigeria</option>
+         <option value="Tanzania">Tanzania</option>
+       </select>
+       </fieldset>
+                                 
+                                 
+       <fieldset>
+        <legend>Courses</legend>
+                                
+  
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+         
+          <option value="web">Web Development</option>
+          <option value="security">Cyber Security</option>
+          <option value="data">Data Science</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+
+        <label for="bio">Brief Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Charles Wambua. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
